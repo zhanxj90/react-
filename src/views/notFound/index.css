@@ -1,0 +1,52 @@
+
+html, body {
+  height: 100%;
+  background-color: #fbfbfb;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-404 {
+  height: 100%;
+  font-family: "microsoft yahei";
+  background: url(../../static/beaut_404_af0f2a5.jpg) no-repeat 50% 119px;
+}
+
+.bg-404 .main {
+  width: 1040px;
+  margin: 0 auto;
+  padding-top: 500px;
+  padding-left: 60px;
+}
+
+.bg-404 .main .aiya {
+  font-size: 34px;
+  line-height: 60px;
+  height: 60px;
+  color: #00a2eb;
+  padding-bottom: 14px;
+}
+
+.bg-404 .main .back {
+  width: 189px;
+  height: 57px;
+  line-height: 57px;
+  background-color: #00a2eb;
+  text-align: center;
+  color: #fff;
+  font-size: 21px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px #00a2eb;
+}
+
+.bg-404 .main .back:before {
+  content: "";
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 4px;
+  width: 21px;
+  height: 21px;
+  background: url(//cdn.tubangzhu.com/static/tbz-common/images/arrow_a7027e1.png) no-repeat;
+}

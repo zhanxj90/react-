@@ -1,9 +1,11 @@
 import{
     Home,
-    Users,
+    Teach,
     Login,
     NotFound,
-    BManagement
+    Student,
+    Users1,
+    Users2,
 } from 'views'
 
 export const mainRoute = [
@@ -19,19 +21,33 @@ export const mainRoute = [
 
 export const pageRoute = [
     {
-        pathname: '/home',
-        component: Home
+        pathname: '/admin/home',
+        component: Home,
+        title:"首页",
+        icon:"home"
     },
     {
-        pathname: '/users',
-        component: Users
+        pathname: '/admin/teach',
+        component: Teach,
+        title:"员工管理",
+        icon:"home"
     },
     {
-        pathname: '/bmanagement',
-        component: BManagement
-    },
-    {
-        pathname: '/users',
-        component: Users
+        pathname: '/admin/student',
+        title:"学员管理",
+        icon:"user",
+        component: Student,
+        children:[
+            {
+                title:"学员列表",
+                pathname:"/admin/student/users1",
+                component: Users1,
+            },
+            {
+                title:"学员权限",
+                pathname:"/admin/student/users2",
+                component: Users2,
+            }
+        ]
     }
 ]

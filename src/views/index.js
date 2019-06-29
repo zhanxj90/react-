@@ -11,8 +11,18 @@ const Login = Loadable({
     loading: Loading,
 })
 
-const Users = Loadable({
-    loader: ()=> import('./users'),
+const Student = Loadable({
+    loader: ()=> import('./student'),
+    loading: Loading,
+})
+
+const Users1 = Loadable({
+    loader: ()=> import('components/users1'),
+    loading: Loading,
+})
+
+const Users2 = Loadable({
+    loader: ()=> import('components/users2'),
     loading: Loading,
 })
 
@@ -20,8 +30,8 @@ const NotFound = Loadable({
     loader: ()=> import('./notFound'),
     loading: Loading,
 })
-const BManagement = Loadable({
-    loader: ()=> import('./BManagement'),
+const Teach = Loadable({
+    loader: ()=> import('./teach'),
     loading: Loading,
 })
 
@@ -29,6 +39,8 @@ export {
     Home,
     Login,
     NotFound,
-    Users,
-    BManagement
+    Student,
+    Users1,
+    Users2,
+    Teach
 }
